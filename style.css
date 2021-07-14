@@ -21,11 +21,17 @@ body{
 .banner-logo img{
     justify-content: center;
     margin-top:80px ;
-    margin-left: 30px;
+    margin-left: 90px;
     margin-right:50px ;
     margin-bottom:100px;
     width: 556.01px;
     height: 438px;
+}
+
+            /* transform-origin: top right;
+} */
+.banner-logo:hover .banner-player{
+     transition: transform .50s ease-out .20s ;
 }
 .announce-button{
     border: 0;
@@ -63,6 +69,39 @@ body{
 .player p{
     color: #6C6C6C;
 }
+ /* bonus part css 1 */
+.login-container{
+            display: flex;
+            justify-content: center;
+        }
+.login-form input,button{
+            font-size: 1.3em;
+            margin-top: 15px;
+            border: 2px solid lightgrey;
+            padding-left: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 20px;
+}
+ .login-form {
+ display: flex;
+ flex-direction: column;       
+}
+.login-form h1{
+     padding-left:0;
+    color: slateblue;
+}
+.login-form button{
+background-color: rgb(91, 37, 240);
+color: whitesmoke; 
+font-weight: 700;
+padding: 5px;
+margin-bottom: 100px;
+}
+.fa-sign-in-alt{
+    color: thistle;
+}
+/* bonus part css 2 */
 .bonus{
     background-image: url(images/bonus.jpg);
     height: 400px;
@@ -86,17 +125,15 @@ body{
 
 .bottom-logosandicon{
     display: grid;
-   
-
 }
 .bottom-logo img{
     width:450px ;
     height: 120px;
-    margin-left: 350px;
+    margin-left: 380px;
 
 }
 .bottom-icons{
-    margin-left: 530px;
+    margin-left: 590px;
 }
 .bottom-icons i{
     padding: 5px;
@@ -136,12 +173,12 @@ footer{
          grid-template-columns: repeat(1,1fr);
      }
      .top-banner h1{
-        font-size: 30px;
+        font-size: 30%;
      }
      .banner-logo img{
          display:flex;
          flex-direction: column;
-         margin-right:-10px;
+         margin-right:10%;
      }
 
      .total-players{
@@ -152,6 +189,10 @@ footer{
      }
      .container3{
          width: 100%;
+     }
+     .container4{
+         width: 100%;
+         display: flex;
      }
 
 }
@@ -169,6 +210,9 @@ footer{
            grid-template-columns: repeat(2,1fr)
      }
      .player{
+         width: 100%;
+         padding-right: 20px;
+         grid-column-gap: 30px;
          flex-direction: column;
      }
 }
