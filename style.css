@@ -57,6 +57,45 @@ body{
     
 }
 .player p{
-    color: 
-#6C6C6C;
+    color: #6C6C6C;
+}
+.bottom-logosandicon{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+
+}
+.bottom-logo img{
+    width:550px ;
+    height: 120px;
+    margin-left: 350px;
+
+}
+.bottom-icons{
+    margin-left: 600px;
+}
+.bottom-icons i{
+    padding: 5px;
+}
+.fa-facebook-square{
+    color: #6C6C6C;
+    width: 30px;
+    height: 30px;
+}
+.fa-instagram-square{
+    color: #6C6C6C;
+    width: 30px;
+    height: 30px;
+}
+.fa-linkedin{
+    color: #6C6C6C;
+    width: 30px;
+    height: 30px;
+}
+.fa-youtube{
+    color: #6C6C6C;
+    width: 30px;
+    height: 30px;
+}
+footer{
+    text-align: center;
 }
