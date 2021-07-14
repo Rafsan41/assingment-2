@@ -54,11 +54,19 @@ body{
 .player img{
      width: 345px;
      height: 255px;
+      
     
 }
 .player p{
     color: #6C6C6C;
 }
+.bonus{
+    background-image: url(images/bonus.jpg);
+    background-repeat:no-repeat ;
+    background-size: cover;
+}
+
+
 .bottom-logosandicon{
     display: grid;
     grid-template-columns: repeat(1,1fr);
