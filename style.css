@@ -8,6 +8,7 @@ body{
     width: 100%;
     margin-bottom: 100px;
 }
+ /* 1st section css start */
 .top-banner{
     display: flex;
   
@@ -19,8 +20,8 @@ body{
 }
 .banner-logo img{
     justify-content: center;
-    margin-top:100px ;
-    margin-left: 100px;
+    margin-top:80px ;
+    margin-left: 30px;
     margin-right:50px ;
     margin-bottom:100px;
     width: 556.01px;
@@ -33,7 +34,9 @@ body{
     margin-left: 50px ;
     padding: 10px 15px ;
     color: white;
-}
+     /* 1st section css end */
+} 
+/* 2nd section css start */
 .total-players{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -62,24 +65,38 @@ body{
 }
 .bonus{
     background-image: url(images/bonus.jpg);
+    height: 400px;
+    margin-bottom: 50px;
     background-repeat:no-repeat ;
     background-size: cover;
+}
+
+.bonus h1{
+    font-size: 40px;
+    color:wheat;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+.bonus h3{
+    font-size: 25px;
+    color:#00d9ff;
+    padding-left: 10px;
 }
 
 
 .bottom-logosandicon{
     display: grid;
-    grid-template-columns: repeat(1,1fr);
+   
 
 }
 .bottom-logo img{
-    width:550px ;
+    width:450px ;
     height: 120px;
     margin-left: 350px;
 
 }
 .bottom-icons{
-    margin-left: 600px;
+    margin-left: 530px;
 }
 .bottom-icons i{
     padding: 5px;
@@ -106,4 +123,52 @@ body{
 }
 footer{
     text-align: center;
+}
+/*----------------
+ mobile device
+---------------- */
+@media screen and (max-width:688px) {
+    .container{
+        width: 100%;
+     }
+     .top-banner{
+         display: grid;
+         grid-template-columns: repeat(1,1fr);
+     }
+     .top-banner h1{
+        font-size: 30px;
+     }
+     .banner-logo img{
+         display:flex;
+         flex-direction: column;
+         margin-right:-10px;
+     }
+
+     .total-players{
+           grid-template-columns: repeat(1,1fr)
+     }
+     .player{
+         flex-direction: column;
+     }
+     .container3{
+         width: 100%;
+     }
+
+}
+
+/*-----------------
+ tablet device
+------------------- */
+
+@media screen and (min-width:688px)and (max-width:992px) {
+    .container{
+        width: 100%;
+    }
+    .total-players{
+        width: 100%;
+           grid-template-columns: repeat(2,1fr)
+     }
+     .player{
+         flex-direction: column;
+     }
 }
